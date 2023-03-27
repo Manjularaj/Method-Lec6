@@ -1,0 +1,30 @@
+﻿<Window x:Class="Method_Lec6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Method_Lec6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RichTextBox Margin="400,37,0,47" HorizontalAlignment="Left" Width="358">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplay"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Canvas Margin="25,37,424,33" Background="#FFCE3679">
+            <Label Content="Last Name" Width="183" HorizontalAlignment="Left" Canvas.Left="49" Canvas.Top="90" VerticalAlignment="Center" FontSize="18"/>
+            <Label Content="CSI" Width="96" Canvas.Left="26" Canvas.Top="182" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Content="GenEd" Width="140" Canvas.Left="201" Canvas.Top="182" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtFirstName" Canvas.Left="49" TextWrapping="Wrap" Canvas.Top="53" Width="246" RenderTransformOrigin="0.588,-1.011" HorizontalAlignment="Left" Height="32" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtLastName" Canvas.Left="49" TextWrapping="Wrap" Canvas.Top="124" Width="246" RenderTransformOrigin="0.588,-1.011" Height="32" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtCSIGrade" Canvas.Left="36" TextWrapping="Wrap" Canvas.Top="221" Width="86" RenderTransformOrigin="0.588,-1.011" Height="32" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtGenEdGrade" Canvas.Left="209" TextWrapping="Wrap" Canvas.Top="221" Width="86" RenderTransformOrigin="0.588,-1.011" Height="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button x:Name="btnAddStudent" Content="Add Student" Canvas.Left="97" Canvas.Top="311" Height="28" Width="174" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Click="btnAddStudent_Click"/>
+        </Canvas>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="74,52,0,0" VerticalAlignment="Top" Width="183" FontSize="18" Height="44"/>
+
+    </Grid>
+</Window>
